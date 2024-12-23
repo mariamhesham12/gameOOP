@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="home-page" id="homePage">
+    <div class="container navv shadow rounded-5 mb-5">
+      <nav class="navbar navbar-expand-lg position-sticky rounded-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./images/logo-sm.png" width="40" alt="logo" /> GAME
+            REVIEWS</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  data-genre="MMORPG"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-genre="SHOOTER">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-genre="SAILING">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-genre="PERMADEATH"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-genre="SUPERHERO"
+                  >SUPERHERO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-genre="PIXEL">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row gy-4" id="gameContainer"></div>
+    </div>
+  </div>
+
+    <div class="loading d-none" id="loading">
+      <span class="loader"></span>
+    </div>
+
+    <section class="showDetails d-none pb-5" id="detailsSection">
+      <div class="container">
+        <div class="details-header d-flex justify-content-between py-4">
+          <h3>Details Game</h3>
+          <i class="fa-solid fa-xmark" id="closeBtn"></i>
+        </div>
+        <div class="row" id="showDetails">
+
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
